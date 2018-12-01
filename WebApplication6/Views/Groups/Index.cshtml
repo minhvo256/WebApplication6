@@ -1,0 +1,57 @@
+﻿@model IEnumerable<WebApplication6.Models.Group>
+
+
+@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+
+
+
+
+<div class="">
+    <div class="page-title">
+        <div class="title_left">
+            <h3>Group management</h3>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+        <div class="panel-primary filterable">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>My Group</h2>
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a href="~/Groups/Create" class="glyphicon glyphicon-plus"></a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <br />
+                        <table id="mygroup" class="tablecontainer">
+                            <thead>
+                                <tr>
+                                    <th>Name Group</th>
+                                    <th>Privacy</th>
+                                    <th>Description</th>
+                                    <th>Session</th>
+                                    <th>Faculty</th>
+                                    <th>Creator</th>
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

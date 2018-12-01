@@ -1,0 +1,40 @@
+﻿@model WebApplication6.Models.Group
+
+<h2>Delete Group</h2>
+@using (Html.BeginForm("delete", "groups", FormMethod.Post, new { id = "popupForm" }))
+{
+    @Html.HiddenFor(a => a.ID)
+    <div class="form-group">
+        <label>Name Group</label>
+        <p>@Model.GroupName</p>
+    </div>
+
+    <div class="form-group">
+        <label>Privacy</label>
+        <p>@Model.Privacy</p>
+    </div>
+
+    <div class="form-group">
+        <label>Session</label>
+        <p>@Model.Session</p>
+    </div>
+
+    <div class="form-group">
+        <label>Description</label>
+        <p>@Model.Description</p>
+    </div>
+
+    <div class="form-group">
+        <label>Faculty</label>
+        <p>@Model.Faculty</p>
+    </div>
+    <div class="form-group">
+        <label>Creator</label>
+        <p>@Model.Creator</p>
+    </div>
+
+    <div>
+        <input type="submit" value="Delete" />
+    </div>
+}
+
